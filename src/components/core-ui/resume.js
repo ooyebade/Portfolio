@@ -13,21 +13,13 @@ import Responsive from 'react-responsive';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink = "/ooyebade.tiiny.site/";
+const resumeLink = "https://github.com/ooyebade/Portfolio/blob/main/src/assets/Oyindamola_Oyebade_Resume.pdf";
 
 const Resume = () => {
    const [numPages, setNumPages] = useState(null);
    const { theme } = useContext(ThemeContext);
-   const [width, setWidth] = useState(1200);
    const isDesktop = Responsive({ minWidth: 786 });
-   const pdf = resumeLink;
 
-   useEffect(() => {
-       setWidth(window.innerWidth);
-   }, [])
-
-
-   
    return (
        <div style={{ backgroundColor: theme.secondary }}>
            <section className="service-container">
@@ -57,7 +49,7 @@ const Resume = () => {
                    </div>
 
                    <div>
-                        <Document file={resumePdf} onLoadSuccess={({ numPages }) => setNumPages(numPages)}>
+                        <Document file={resumeLink} onLoadSuccess={({ numPages }) => setNumPages(numPages)}>
                             {Array(numPages).fill().map((_, i) => (
                             <Page key={`page_${i + 1}`} pageNumber={i + 1} scale={isDesktop ? 1.7 : 0.6} />
                             ))}
