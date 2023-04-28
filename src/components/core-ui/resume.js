@@ -13,12 +13,17 @@ import Responsive from 'react-responsive';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink = "https://github.com/ooyebade/Portfolio/blob/main/src/assets/Oyindamola_Oyebade_Resume.pdf";
+const resumeLink = "https://raw.githubusercontent.com/ooyebade/Portfolio/main/src/assets/Oyindamola_Oyebade_Resume.pdf";
 
 const Resume = () => {
    const [numPages, setNumPages] = useState(null);
    const { theme } = useContext(ThemeContext);
    const isDesktop = Responsive({ minWidth: 786 });
+   const [width, setWidth] = useState(1200);
+
+    useEffect(() => {
+        setWidth(window.innerWidth);
+    }, []);
 
    return (
        <div style={{ backgroundColor: theme.secondary }}>
