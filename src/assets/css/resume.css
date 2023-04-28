@@ -1,0 +1,83 @@
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.service-container {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.one {
+    position: relative;
+}
+
+.heading {
+    color: #002aff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 30px;
+    display: block;
+    font-family: 'Aveniornextltpro-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.one span:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #002aff;
+}
+
+.one span:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #002aff;
+}
+
+.resume-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.resume-btn i {
+    padding: 0 10px;
+}
+
+.main-btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 40px;
+    text-align: center;
+    font-weight: 500;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid #2F3C7E;
+    line-height: 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #2F3C7E;
+    color: #ffffff;
+}
+
+.main-btn:hover {
+    color: #2F3C7E;
+    background-color: transparent;
+}
