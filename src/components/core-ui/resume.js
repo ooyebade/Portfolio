@@ -14,7 +14,7 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink = "https://raw.githubusercontent.com/ooyebade/Portfolio/main/src/assets/Oyindamola_Oyebade_Resume.pdf";
+const resumeLink = "https://raw.githubusercontent.com/ooyebade/Portfolio/main/src/assets/Oyindamola_Resume.pdf";
 
 function Resume() {
    const [numPages, setNumPages] = useState(null);
