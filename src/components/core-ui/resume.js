@@ -5,7 +5,7 @@ import Particle from "../../helper/particle";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import { Container, Row } from "react-bootstrap";
-import resumePdf from "../../assets/Oyindamola_Oyebade_Resume.pdf";
+import resumePdf from "../../assets/Oyindamola_Resume.pdf";
 import  Zoom  from 'react-reveal/Zoom';
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { ThemeContext } from '../../context/themeContext';
