@@ -9,7 +9,6 @@ import resumePdf from "../../assets/Oyindamola_Resume.pdf";
 import  Zoom  from 'react-reveal/Zoom';
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { ThemeContext } from '../../context/themeContext';
-import Responsive from 'react-responsive';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;

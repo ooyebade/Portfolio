@@ -84,7 +84,7 @@ function NavbarUi({ theme, classes, handleDrawerOpen, handleDrawerClose, open, t
 
                         <Fade left>
                             <NavLink
-                                to='/about'
+                                to='/#about'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}

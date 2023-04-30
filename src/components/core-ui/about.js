@@ -13,7 +13,7 @@ const About = () => {
     return (
         <div style={{ backgroundColor: theme.secondary }}>
 
-        <section className='about-container' >
+        <section className='about-container' id='about'>
             <Container className='container'>
                 <div className='one'>
                     <span className='heading'>{aboutSection.abouttitle}</span>
