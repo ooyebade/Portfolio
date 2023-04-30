@@ -4,28 +4,31 @@ import './App.css';
 import { ThemeContext } from './context/themeContext';
 import Home from './pages/home/home';
 import ThemeChange from './helper/theme-change';
-import AboutPage from './pages/about/about';
 import ResumePage from './pages/resume/resume';
+import BackToTop from './helper/back-to-top';
+import ScrollToTop from './helper/scroll-to-top';
+
 function App() {
 
   const  { backgroundImage } = useContext(ThemeContext);
 
   return (
 
-    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} >
+    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}} >
       
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} exact />
-          <Route path='/about' element={<AboutPage />} exact />
           <Route path='/resume' element={<ResumePage />} exact />
 
           <Route 
-            path='*'
+            path="*"
             element={<Navigate to="/" replace />}
           />
         </Routes>
       </Router>
+      <BackToTop />
       <ThemeChange />
     </div>
   );
