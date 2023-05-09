@@ -5,6 +5,7 @@ import { ThemeContext } from './context/themeContext';
 import Home from './pages/home/home';
 import ThemeChange from './helper/theme-change';
 import ResumePage from './pages/resume/resume';
+import ProjectPage from './pages/projects/projects';
 import BackToTop from './helper/back-to-top';
 import ScrollToTop from './helper/scroll-to-top';
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} exact />
           <Route path='/resume' element={<ResumePage />} exact />
+          <Route path='projects' element={<ProjectPage />} exact />
 
           <Route 
             path="*"

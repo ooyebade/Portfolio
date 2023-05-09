@@ -6,6 +6,7 @@ import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { IoClose, IoHomeSharp, IoMenuSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { MdPhone } from 'react-icons/md';
+import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import { Drawer } from '@mui/material';
 import '../../assets/css/navbar.css';
 import { greetings } from '../../data/portfolio';
@@ -111,6 +112,24 @@ function NavbarUi({ theme, classes, handleDrawerOpen, handleDrawerClose, open, t
                                     />
                                     <span className={classes.drawerLinks}>
                                         Resume
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
+
+                        <Fade left>
+                            <NavLink
+                                to='/projects'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <AiOutlineFundProjectionScreen
+                                        className={classes.drawerIcon}
+                                    />
+                                    <span className={classes.drawerLinks}>
+                                        Projects
                                     </span>
                                 </div>
                             </NavLink>
