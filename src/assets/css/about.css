@@ -1,10 +1,10 @@
 .container {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .about-container {
-    padding: 125px 0 130px;
+    padding: 35px 0 30px;
     text-align: center;
 }
 

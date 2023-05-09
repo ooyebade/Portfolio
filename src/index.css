@@ -33,13 +33,14 @@
 
 * {
   margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  /*
   outline: none;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
   scroll-behavior: smooth;
-  /*font-family: "Poppins", sans-serif;*/
+  font-family: "Poppins", sans-serif;
+  */
 }
 
 a {

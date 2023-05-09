@@ -12,9 +12,7 @@ function LandingUi ({ theme, drawerOpen, classes, backgroundImage }) {
     return (
         <div className='landing' style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat' }} >
             <div className='landing--container'>
-                <div
-                    className='social'
-                >
+                <div className='social'>
                     <div className='lcl--content'>
                         {greetings.linkedin && (
                             <a
