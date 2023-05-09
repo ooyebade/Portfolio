@@ -1,3 +1,6 @@
+import chefBoogs from '../assets/images/chefBoogs.png'
+//import chefBoogs from '../assets/images/svg/chefBoogs.svg'
+
 export const greetings = {
     name: "Elizabeth Oyebade",
     professionals: "Front End/WordPress Designer",
@@ -29,4 +32,15 @@ export const skillsData = [
     'NodeJS',
     'PHP',
     'Bootstrap'
+]
+
+export const projectsData = [
+    {
+        id: 1,
+        projectName: 'Chef Boogs',
+        projectDesc: "This project is an oline food ordering website, Customer can learn more about the chef, view the menu, and place an order.", 
+        tags: ['WordPress'], 
+        demo: 'https://chef-boogs.com/',
+        image: chefBoogs   
+    }
 ]

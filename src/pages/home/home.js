@@ -5,7 +5,7 @@ import Landing from '../../components/container/landing';
 import { greetings } from '../../data/portfolio';
 import About from '../../components/core-ui/about';
 import Skills from '../../components/core-ui/skills';
-
+import Projects from '../../components/container/projects';
 function Home() {
     return (
         
@@ -19,6 +19,7 @@ function Home() {
            {/* <About /> */}
            <About />
            <Skills />
+           <Projects />
         </div>
     )
 }
