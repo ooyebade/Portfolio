@@ -16,3 +16,17 @@ export const aboutSection = {
     description2: "My journey in web development and design began during my high school years, where I challenged myself to build a mini to-do list page. Through watching numerous tutorial videos, I successfully crafted the page and gained a solid foundation in web development and design (HTML & CSS). Since then, I have been dedicated to designing and developing responsive websites and web applications from scratch. In my projects, I leverage various technologies, tools, and languages such as HTML, CSS, JavaScript, REACT JS, Bootstrap, Figma, and VS Code to bring my designs to life.",
     description3: "I am always eager to expand my skill set and stay up-to-date with the latest trends in web development. Browse my portfolio to see my latest creations and get in touch if you're interested in working together!"
 }
+
+export const skillsData = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Angular',
+    'WordPress',
+    'jQuery',
+    'JSON',
+    'NodeJS',
+    'PHP',
+    'Bootstrap'
+]
