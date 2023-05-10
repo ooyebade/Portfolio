@@ -1,0 +1,365 @@
+.contacts {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+  
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 6rem 3rem;
+    width: 80%;
+    height: 100%;
+    margin-top: 1rem;
+}
+  
+.contact-container span {
+    display: block;
+    color: #002aff;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.contact-container p {
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.contactConatiners .contact-one {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    /*width: 150%; */
+}
+
+.contactConatiners .conct {
+    padding: 20px;
+    box-shadow: 0px 5px 15px #000;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    flex: 1 1 30%;
+    margin-right: 10px;
+}
+  
+.contactConatiners .conct:last-child {
+    margin-right: 0;
+}
+  
+.contactConatiners .conct i {
+    color: #000;
+    font-size: 2rem;
+    position: absolute;
+    transition: all 0.4s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.contactConatiners .conct:hover i {
+    transform: scale(2);
+    opacity: 0;
+}
+  
+.contactConatiners .conct:hover .card-title {
+    color: #fff;
+    transform: translate(0, 0);
+}
+  
+.contactConatiners .conct:hover .card-info {
+    color: #fff;
+    transform: translate(0, 0);
+}
+  
+.contactConatiners .conct:hover {
+    background-color: #2F3C7E;
+    transform: translate(0, 0);
+}
+  
+.contactConatiners .card-title {
+    color: #d44444;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transform: translate(0, -80px);
+    transition: all 0.4s ease;
+}
+  
+.contactConatiners .card-info {
+    color: #fff;
+    margin-top: 10px;
+    transform: translate(0, 80px);
+    transition: all 0.4s ease;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+  
+.contacts-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+  
+.contacts-form {
+    padding: 20px 0;
+    display: flex;
+    flex: 0.8;
+    width: 100%;
+}
+  
+.contacts-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+  
+.location-map {
+    
+    /*width: 50%;
+    padding: 20px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex: 0.8;
+    box-sizing: border-box;
+    padding-left: 7rem;
+    margin-top: 2.5rem;
+}
+
+.input-container {
+    width: 100%;
+}
+  
+.form-input {
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 2rem;
+    padding: 0.7rem 0.7rem;
+    border-radius: 20px;
+    width: 100%;
+    resize: none;
+}
+  
+.form-message {
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 2rem;
+    padding: 0.7rem 0.7rem;
+    border-radius: 20px;
+    width: 100%;
+    resize: none;
+}
+  
+.submit-btn button {
+    border: none;
+    outline: none;
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+  
+.submit-btn button p {
+    font-size: 16px;
+    font-family: var(--primaryFont);
+    color: #fff;
+    padding: 0;
+}
+  
+.submit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+  
+.send-icon {
+    font-size: 25px;
+    transform-origin: center;
+    transform: translate(5px, -3px) rotate(-30deg);
+}
+  
+.success-icon {
+    font-size: 28px;
+    transition: all 0.3s 0.8s ease-in-out;
+}
+  
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .contact-container {
+      padding: 2rem 4rem;
+      width: 90%;
+      margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-container {
+      width: 100%;
+      margin-top: 1rem;
+    }
+}
+  
+@media screen and (max-width: 800px) {
+    .contact-container {
+      padding: 2rem;
+      margin-top: 0rem;
+      align-items: center;
+    }
+  
+    .contacts-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contacts-form {
+      display: flex;
+      flex: 1;
+      width: 80%;
+    }
+  
+    .form-input {
+      margin-bottom: 0.45rem;
+    }
+  
+    .contacts-form form {
+      align-items: flex-end;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .contacts-form {
+      display: flex;
+      flex: 1;
+      width: 100%;
+    }
+  
+    .contacts-container  {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    .submit-btn {
+      align-self: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contactConatiners {
+      padding: 30px 20px;
+    }
+
+    .contactConatiners p {
+        max-width: 100%;
+    }
+
+    .contact-one {
+        flex-wrap: wrap;
+    }
+
+    .conct {
+        margin: 10px 0;
+    }
+
+    .contacts-form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .location-map {
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contactConatiners .contact-one {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactConatiners .contact-one {
+        padding: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+      opacity: 1;
+      transform: translate(5px, -3px) rotate(0deg);
+    }
+  
+    /* 60%{
+        opacity: 0;
+      }
+      80%{
+        opacity: 1;
+      } */
+    100% {
+      transform: rotate(359deg);
+    }
+}
+  
+@keyframes fly {
+  
+    /* 0%,100%{
+          transform: translate(5px,-3px) rotate(-30deg);
+          opacity: 1;
+      }
+      25%{
+          transform: translate(15px,-10px) rotate(-30deg);
+          opacity: 0.8;
+      }
+      50%{
+          transform: translate(20px,-12px) rotate(-30deg);
+          opacity: 0;
+      }
+      60%{
+          transform: translate(-12px,10px) rotate(-30deg);
+          opacity: 0;
+      }
+      75%{
+          opacity: 0.8;
+      } */
+    10% {
+      transform: rotate(0deg);
+    }
+  
+    20% {
+      transform: translateX(-10px);
+    }
+  
+    70% {
+      transform: translateX(60px);
+    }
+  
+    100% {
+      transform: translateX(80px);
+    }
+}

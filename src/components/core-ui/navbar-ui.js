@@ -136,6 +136,22 @@ function NavbarUi({ theme, classes, handleDrawerOpen, handleDrawerClose, open, t
                         </Fade>
 
                         <Fade left>
+                            <NavLink
+                                to='/contacts'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <MdPhone className={classes.drawerIcon} />
+                                    <span className={classes.drawerLinks}>
+                                        Contact
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
+
+                        <Fade left>
                             <div className={classes.drawerItem} onClick={themeChange}>
                                 {isDark ?
                                     <BsFillSunFill className={classes.drawerIcon} />
@@ -148,22 +164,6 @@ function NavbarUi({ theme, classes, handleDrawerOpen, handleDrawerClose, open, t
                                     }
                                 </span>
                             </div>
-                        </Fade>
-
-                        <Fade left>
-                            <NavLink
-                                to='/#contacts'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
-                                <div className={classes.drawerItem}>
-                                    <MdPhone className={classes.drawerIcon} />
-                                    <span className={classes.drawerLinks}>
-                                        Contact
-                                    </span>
-                                </div>
-                            </NavLink>
                         </Fade>
                     </div>
                 </div>
