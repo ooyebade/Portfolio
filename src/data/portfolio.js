@@ -1,4 +1,6 @@
 import chefBoogs from '../assets/images/chefBoogs.png'
+
+// import { FaMapMarker, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 //import chefBoogs from '../assets/images/svg/chefBoogs.svg'
 
 export const greetings = {
@@ -44,3 +46,29 @@ export const projectsData = [
         image: chefBoogs   
     }
 ]
+
+export const contactData = {
+    contactHeading: "GET IN TOUCH",
+    contactPara: "I'd love to hear from you. Feel free to contact me!",
+    mapAddress: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.284272476079!2d-77.55238152499844!3d38.75718345496673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b65ded4e6002a5%3A0xf38a9cf03b991c8d!2sDawkins%20Crest%20Cir%2C%20Bristow%2C%20VA%2020136!5e0!3m2!1sen!2sus!4v1683685579980!5m2!1sen!2sus",
+    contactBox: [
+        {
+            "header": "email",
+            "className": "fas fa-envelope",
+            "name": "Email",
+            "url": "eoyebadeo24@gmail.com"
+        },
+        {
+            "header": "address",
+            "className": "fas fa-map-marker-alt",
+            "name": "Address",
+            "url": "Bristow, VA"
+        },
+        {
+            "header": "phone",
+            "className": "fas fa-phone-alt",
+            "name": "Phone",
+            "url": "(571) 398-8321"
+        }
+    ]
+}
