@@ -7,6 +7,7 @@ import ThemeChange from './helper/theme-change';
 import ResumePage from './pages/resume/resume';
 import ProjectPage from './pages/projects/projects';
 import ContactPage from './pages/contact/contact';
+import Footer from './components/container/footer';
 import BackToTop from './helper/back-to-top';
 import ScrollToTop from './helper/scroll-to-top';
 
@@ -31,6 +32,7 @@ function App() {
             element={<Navigate to="/" replace />}
           />
         </Routes>
+        <Footer />
       </Router>
       <BackToTop />
       <ThemeChange />

@@ -6,8 +6,8 @@ import chefBoogs from '../assets/images/chefBoogs.png'
 export const greetings = {
     name: "Elizabeth Oyebade",
     professionals: "Front End/WordPress Designer",
-    copyright: "Designed by E.O.",
-    copyrightyear: "Copyright &copy; 2023 EO",
+    copyright: "Designed and Developed by Elizabeth Oyebade",
+    copyrightyear: "2023",
     linkedin: "https://www.linkedin.com/in/oyebadeoe/",
     github: "https://github.com/ooyebade",
     resumePdf: "https://www.dropbox.com/s/boze08mb2w6hptf/Oyindamola%20Oyebade%20Resume.pdf?dl=0"
