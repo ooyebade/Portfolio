@@ -1,0 +1,38 @@
+.footer {
+    background-color: rgb(10, 4, 22);
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+    clear: both
+}
+  
+.footer .footer-body {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer h3 {
+    font-size: 1em;
+    color: white;
+}
+
+.footer ul {
+    padding: 20px 0;
+}
+
+.footer li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.footer .social-icons {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 30px 20px;
+    }
+}
