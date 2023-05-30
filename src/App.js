@@ -17,7 +17,8 @@ function App() {
 
   return (
 
-    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}} >
+    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', 
+                  backgroundAttachment: 'fixed', backgroundPosition: 'top' }} >
       
       <Router>
         <ScrollToTop />

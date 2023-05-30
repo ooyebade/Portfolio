@@ -32,8 +32,8 @@ function Resume() {
                 <Particle />
                     <Row style={{ justifyContent: "center", position: "relative" }}> 
                         <Zoom left cascade>
-                            <div className="one">
-                                <span className="heading">Resume</span>
+                            <div className="resume-one">
+                                <span className="resume-heading">Resume</span>
                             </div>
                         </Zoom>
                    </Row>

@@ -48,6 +48,7 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                                 </label>
                                 <input
                                     placeholder='John Doe'
+                                    id='Name'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     type='text'
@@ -64,6 +65,7 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                                 </label>
                                     <input
                                         placeholder='John@doe.com'
+                                        id='Email'
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         type='email'
@@ -80,6 +82,7 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                                             </label>
                                             <textarea
                                                 placeholder='Type your message....'
+                                                id='Message'
                                                 value={message}
                                                 onChange={(e) => setMessage(e.target.value)}
                                                 type='text'

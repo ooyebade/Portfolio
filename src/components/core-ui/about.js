@@ -15,8 +15,8 @@ const About = () => {
 
         <section className='about-container' id='about'>
             <Container className='container'>
-                <div className='one'>
-                    <span className='heading'>{aboutSection.abouttitle}</span>
+                <div className='one' style={{ color: theme.primary }}>
+                    <span className='heading' style={{ color: theme.primary }}>{aboutSection.abouttitle}</span>
                     {/**
                     <div className="line-styling">
                         <div className="style-circle" style={{ backgroundColor: theme.primary }}></div>

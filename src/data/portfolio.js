@@ -1,5 +1,5 @@
-import chefBoogs from '../assets/images/chefBoogs.png'
-
+import chefBoogs from '../assets/images/Chef-Boogs.png'
+import bethelInnovations from '../assets/images/bethel-logo.jpg'
 // import { FaMapMarker, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 //import chefBoogs from '../assets/images/svg/chefBoogs.svg'
 
@@ -44,6 +44,16 @@ export const projectsData = [
         tags: ['WordPress'], 
         demo: 'https://chef-boogs.com/',
         image: chefBoogs   
+    }, 
+
+    {
+        id: 2,
+        projectName: 'Bethel Innovations',
+        projectDesc: 'This project is about a consulting service company',
+        tags: ['ReactJS', 'Bootstraop', 'HTML', 'CSS', 'React Components'],
+        demo: 'https://bethelinnovations.com/',
+        image: bethelInnovations
+        
     }
 ]
 
