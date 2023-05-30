@@ -2,7 +2,7 @@
 
 export const theLightTheme = {
     type: 'light',
-    primary: '#002aff',
+    primary: '#000',
     quaternary: '#EFF3F4',
     quaternaryLight: '#F7F9F9',
     secondary: '#ffffff',
@@ -13,9 +13,9 @@ export const theLightTheme = {
 export const theDarkTheme = {
     type: 'dark',
     primary: '#f03a3f',
-    secondary: '#0F0C41',
+    secondary: '#01263f	',
     secondary2: '#000000',
-    quaternary: '#0C0B33',
+    quaternary: '#0b2434',
     quaternaryLight: '#8b98a5',
     tertiary: '#EFF3F4',
     buttonColor: '#8B98A5',
