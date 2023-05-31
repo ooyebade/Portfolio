@@ -8,6 +8,7 @@ import ContactUI from '../core-ui/contact-ui';
 const Contacts = () => {
   const [open, setOpen] = useState(false);
 
+  const[subject, setSubject] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -77,11 +78,12 @@ const Contacts = () => {
 
     if (name && email && message) {
       if (isEmail(email)) {
-        emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+        emailjs.sendForm('gmail', 'react_template', form.current, 'O-ggGSpn8terRIiHx')
           .then((result) => {
             console.log('success');
             setSuccess(true);
             setErrMsg('');
+            setSubject('');
             setName('');
             setEmail('');
             setMessage('');
@@ -107,6 +109,8 @@ const Contacts = () => {
       handleClose={handleClose}
       classes={classes}
       handleContactForm={handleContactForm}
+      subject={subject}
+      setSubject={setSubject}
       name={name}
       setName={setName}
       form={form}

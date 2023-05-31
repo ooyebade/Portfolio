@@ -7,7 +7,7 @@ import { contactData } from '../../data/portfolio';
 
 import '../../assets/css/contact.css';
 
-const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactForm, name, setName, form, email, setEmail, message, setMessage }) => {
+const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactForm, name, setName, form, subject, setSubject, email, setEmail, message, setMessage }) => {
 
     const { theme } = useContext(ThemeContext);
 
@@ -43,6 +43,23 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                     <div className='contacts-form'>
                         <form ref={form} onSubmit={handleContactForm}>
                             <div className='input-container'>
+                                <label
+                                    htmlFor='Subject'
+                                    className={classes.label}
+                                >
+                                    Subject
+                                </label>
+                                <input
+                                    placeholder='Message Subject'
+                                    id='Subject'
+                                    value={subject}
+                                    onChange={(e) => setSubject(e.target.value)}
+                                    type='subject'
+                                    name='subject'
+                                    className={`form-input ${classes.input}`}
+                                />
+                            </div>
+                            <div className='input-container'>
                                 <label htmlFor='Name' className={classes.label}>
                                     Name
                                 </label>
@@ -52,7 +69,7 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     type='text'
-                                    name='user_name'
+                                    name='name'
                                     className={`form-input ${classes.input}`}
                                 />
                             </div>
@@ -69,7 +86,7 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         type='email'
-                                        name='user_email'
+                                        name='email'
                                                 className={`form-input ${classes.input}`}
                                             />
                                         </div>
