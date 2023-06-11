@@ -41,7 +41,7 @@ export const projectsData = [
         id: 1,
         projectName: 'Chef Boogs',
         projectDesc: "This project is an oline food ordering website, Customer can learn more about the chef, view the menu, and place an order.", 
-        tags: ['WordPress'], 
+        tags: ['WordPress, Elementor'], 
         demo: 'https://chef-boogs.com/',
         image: chefBoogs   
     }, 
@@ -50,8 +50,8 @@ export const projectsData = [
         id: 2,
         projectName: 'Bethel Innovations',
         projectDesc: 'This project is about a consulting service company',
-        tags: ['ReactJS', 'Bootstraop', 'HTML', 'CSS', 'React Components'],
-        demo: 'https://bethelinnovations.com/',
+        tags: ['ReactJS', 'Bootstrap', 'HTML', 'CSS', 'React Components'],
+        demo: 'http://bethelinnovations.oyebadeoe.com/',
         image: bethelInnovations
         
     }
