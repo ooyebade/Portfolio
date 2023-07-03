@@ -1,16 +1,18 @@
-import React from "react";
+import React from 'react';
 import { HashLink as NavLink } from "react-router-hash-link";
 import Typed from 'react-typed';
 import { greetings } from '../../data/portfolio';
 import cartoon  from '../../assets/images/cartoon.png';
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
+
 import '../../assets/css/landing.css';
 
-function LandingUi ({ theme, drawerOpen, classes, backgroundImage }) {
+function LandingUi ({ theme, drawerOpen, classes }) {
 
     return (
-        <div className='landing' style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat' }} >
+        <div className='landing' >
             <div className='landing--container'>
                 <div className='social'>
                     <div className='lcl--content'>
@@ -21,7 +23,7 @@ function LandingUi ({ theme, drawerOpen, classes, backgroundImage }) {
                                 rel='noreferrer'
                             >
                                 <FaLinkedin
-                                    className='landing--social linkedin-icon'
+                                    className='landing--social'
                                     style={{ color: theme.primary }}
                                     aria-label='LinkedIn'
                                 />
