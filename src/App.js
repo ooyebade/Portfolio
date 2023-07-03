@@ -13,13 +13,12 @@ import ScrollToTop from './helper/scroll-to-top';
 
 function App() {
 
-  const  { backgroundImage } = useContext(ThemeContext);
-
+    const  { backgroundImage } = useContext(ThemeContext);
+  
   return (
 
     <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', 
-                  backgroundAttachment: 'fixed', backgroundPosition: 'top' }} >
-      
+      backgroundAttachment: 'fixed', backgroundPosition: 'top' }} > 
       <Router>
         <ScrollToTop />
         <Routes>
@@ -37,7 +36,7 @@ function App() {
       </Router>
       <BackToTop />
       <ThemeChange />
-    </div>
+   </div>
   );
 }
 
