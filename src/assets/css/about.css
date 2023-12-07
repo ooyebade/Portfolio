@@ -80,8 +80,8 @@
 
 .u-image {
     width: 255px;
-    height: 315px;
-    border-radius: 50%;
+    height: 350px;
+    border-radius: 5%;
     cursor: pointer;
 }
   
