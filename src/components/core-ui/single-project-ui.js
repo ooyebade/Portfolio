@@ -12,7 +12,7 @@ function SingleProjectUI({ id, name, desc, tags, demo, code, image, theme, class
             <div
                 key={id}
                 className="singleProject"
-                style={{ backgroundColor: theme.quaternary }}
+                style={{ backgroundColor: theme.secondary }}
             >
 
                 <div className="projectContent">
