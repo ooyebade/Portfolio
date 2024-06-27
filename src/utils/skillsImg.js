@@ -1,4 +1,4 @@
-import angular from '../assets/images/svg/angular.svg'
+//import angular from '../assets/images/svg/angular.svg'
 import bootstrap from '../assets/images/svg/bootstrap.svg'
 import css from '../assets/images/svg/css.svg'
 import html from '../assets/images/svg/html.svg'
@@ -17,8 +17,8 @@ import wordpress from '../assets/images/svg/wordpress.svg'
 export const skillsImg = (skills) => {
     const skillsID = skills.toLowerCase();
     switch (skillsID) {
-        case 'angular':
-            return angular;
+        /*case 'angular':
+            return angular; */
         case 'bootstrap':
             return bootstrap;
         case 'css':

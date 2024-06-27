@@ -31,7 +31,7 @@ function Footer() {
                         <li className='social-icons'>
                             <a
                                 href={greetings.github}
-                                style={{color: theme.primary}}
+                                style={{color: theme.footerColor}}
                                 target='_blank'
                                 rel='noopener noreferrer'
                             >
@@ -42,7 +42,7 @@ function Footer() {
                         <li className='social-icons'>
                             <a
                                 href={greetings.linkedin}
-                                style={{color: theme.primary}}
+                                style={{color: theme.footerColor}}
                                 target='_blank'
                                 rel='noopener noreferrer'
                             >

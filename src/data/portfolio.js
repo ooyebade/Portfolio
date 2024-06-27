@@ -10,7 +10,7 @@ export const greetings = {
     copyrightyear: "2023",
     linkedin: "https://www.linkedin.com/in/oyebadeoe/",
     github: "https://github.com/ooyebade",
-    resumePdf: "https://www.dropbox.com/s/boze08mb2w6hptf/Oyindamola%20Oyebade%20Resume.pdf?dl=0"
+    resumePdf: "https://www.dropbox.com/s/boze08mb2w6hptf/Oyindamola%20Oyebade%20Resume.pdf?e=1&st=02aegznn&dl=0"
 };
 
 export const aboutSection = {
@@ -27,7 +27,7 @@ export const skillsData = [
     'CSS',
     'JavaScript',
     'React',
-    'Angular',
+    /* 'Angular', */
     'WordPress',
     'jQuery',
     'JSON',

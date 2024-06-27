@@ -2,7 +2,8 @@ import React from 'react';
 import { HashLink as NavLink } from "react-router-hash-link";
 import Typed from 'react-typed';
 import { greetings } from '../../data/portfolio';
-import cartoon  from '../../assets/images/cartoon.png';
+// import cartoon  from '../../assets/images/cartoon.png';
+import profile from '../../assets/images/profilePic.jpg'
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -24,7 +25,7 @@ function LandingUi ({ theme, drawerOpen, classes }) {
                             >
                                 <FaLinkedin
                                     className='landing--social'
-                                    style={{ color: theme.primary }}
+                                    style={{ color: theme.quaternary }}
                                     aria-label='LinkedIn'
                                 />
                             </a>
@@ -37,7 +38,7 @@ function LandingUi ({ theme, drawerOpen, classes }) {
                             >
                                 <FaGithub
                                     className='landing--social'
-                                    style={{ color: theme.primary }}
+                                    style={{ color: theme.quaternary }}
                                     aria-label='GitHub'
                                 />
                             </a>
@@ -45,7 +46,7 @@ function LandingUi ({ theme, drawerOpen, classes }) {
                     </div>
                 </div>
                 <img
-                    src={cartoon}
+                    src={profile}
                     alt=''
                     className='landing--img'
                     style={{

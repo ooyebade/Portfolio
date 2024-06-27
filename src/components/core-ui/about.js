@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { aboutSection } from '../../data/portfolio';
 import { greetings } from '../../data/portfolio';
-import profilePic from '../../assets/images/profile-pic.jpg';
+// import profilePic from '../../assets/images/profile-pic.jpg';
+import profile from '../../assets/images/profilePic.jpg'
 import { ThemeContext } from '../../context/themeContext';
 import '../../assets/css/about.css';
 import { Container } from '@mui/material';
@@ -29,7 +30,7 @@ const About = () => {
                     className='container-layout'>
                         
                     <div className='image-box'>
-                        <img alt='elizabeth' src={profilePic} className='u-image' />
+                        <img alt='elizabeth' src={profile} className='u-image' />
                         <h1 style={{ color: theme.primary }}>{aboutSection.aboutname}</h1>
 
                         <div className='resume-btn'>

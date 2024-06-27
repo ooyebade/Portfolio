@@ -10,11 +10,11 @@ const ThemeChange = () => {
     const useStyles = makeStyles(() => ({
 
         icon: {
-            fontSize: '1.5rem',
-            color: theme.buttonColor,
+            fontSize: '1.4em',
+            color: '#f4a460',
             '&hover': {
                 transform: 'scale(1.08)',
-                color: theme.tertiary,
+                color: '#FFF',
             },
         },
     }));
