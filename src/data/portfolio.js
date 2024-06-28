@@ -10,7 +10,7 @@ export const greetings = {
     copyrightyear: "2023",
     linkedin: "https://www.linkedin.com/in/oyebadeoe/",
     github: "https://github.com/ooyebade",
-    resumePdf: "https://www.dropbox.com/s/boze08mb2w6hptf/Oyindamola%20Oyebade%20Resume.pdf?e=1&st=02aegznn&dl=0"
+    resumePdf: "https://www.dropbox.com/scl/fi/yun7srku79mb0a1vymfqu/Oyindamola-Oyebade-Resume.pdf?rlkey=twxmdfv9m4figdaheptco78xm&st=nhaxp7er&dl=0"
 };
 
 export const aboutSection = {

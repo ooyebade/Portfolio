@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { aboutSection } from '../../data/portfolio';
 import { greetings } from '../../data/portfolio';
 // import profilePic from '../../assets/images/profile-pic.jpg';
-import profile from '../../assets/images/profilePic.jpg'
+import profile from '../../assets/images/profile_pic.JPG'
 import { ThemeContext } from '../../context/themeContext';
 import '../../assets/css/about.css';
 import { Container } from '@mui/material';

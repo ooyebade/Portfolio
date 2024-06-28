@@ -65,7 +65,6 @@
     display: flex;
     padding: 30px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -79,7 +78,7 @@
 }
 
 .u-image {
-    width: 255px;
+    width: 285px;
     height: 350px;
     border-radius: 5%;
     cursor: pointer;
