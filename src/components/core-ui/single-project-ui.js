@@ -3,8 +3,19 @@ import { FaPlay, FaCode } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import '../../assets/css/single-project.css';
 
-function SingleProjectUI({ id, name, desc, tags, demo, code, image, theme, classes }) {
-
+function SingleProjectUI({
+    id,
+    name,
+    desc,
+    tags,
+    demo,
+    code,
+    image,
+    theme,
+    classes,
+    status
+}) 
+{
     return (
 
         <Fade bottom>
@@ -16,16 +27,32 @@ function SingleProjectUI({ id, name, desc, tags, demo, code, image, theme, class
             >
 
                 <div className="projectContent">
+
                     <h2
                         id={name.replace(' ', '-').toLowerCase()}
-                        style={{ color: theme.tertiary}}
+                        style={{ color: theme.tertiary }}
                     >
                         {name}
                     </h2>
 
+                    {/* Project Status */}
+                    {status && (
+                        <div
+                            className="project-status"
+                            style={{
+                                color: theme.primary,
+                                backgroundColor: theme.secondary,
+                                borderColor: theme.primary,
+                            }}
+                        >
+                            {status}
+                        </div>
+                    )}
+
                     <img src={image} alt={name} />
 
                     <div className="project-showcaseBtn">
+
                         <a
                             href={demo}
                             target="_blank"
@@ -34,10 +61,10 @@ function SingleProjectUI({ id, name, desc, tags, demo, code, image, theme, class
                             aria-labelledby={`${name
                                 .replace(' ', '-')
                                 .toLowerCase()} ${name
-                                    .replace(' ', '-')
-                                    .toLowerCase()}-demo`}
+                                .replace(' ', '-')
+                                .toLowerCase()}-demo`}
                         >
-                            <FaPlay 
+                            <FaPlay
                                 id={`${name
                                     .replace(' ', '-')
                                     .toLowerCase()}-demo`}
@@ -57,7 +84,7 @@ function SingleProjectUI({ id, name, desc, tags, demo, code, image, theme, class
                                     .replace(' ', '-')
                                     .toLowerCase()}-code`}
                         >
-                            <FaCode 
+                            <FaCode
                                 id={`${name
                                     .replace(' ', '-')
                                     .toLowerCase()}-code`}
@@ -65,6 +92,7 @@ function SingleProjectUI({ id, name, desc, tags, demo, code, image, theme, class
                                 aria-label="Code"
                             />
                         </a>
+
                     </div>
                 </div>
 
@@ -78,7 +106,7 @@ function SingleProjectUI({ id, name, desc, tags, demo, code, image, theme, class
                     {desc}
                 </p>
 
-                <div 
+                <div
                     className="project-lang"
                     style={{
                         background: theme.secondary,
@@ -89,10 +117,11 @@ function SingleProjectUI({ id, name, desc, tags, demo, code, image, theme, class
                         <span key={id}>{tag}</span>
                     ))}
                 </div>
+
             </div>
+
         </Fade>
     );
 }
-
 
 export default SingleProjectUI;

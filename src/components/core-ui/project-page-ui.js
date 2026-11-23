@@ -37,6 +37,7 @@ const ProjectPageUi = ({ theme, classes, search, setSearch, filteredArticles }) 
                     tags={project.tags}
                     demo={project.demo}
                     image={project.image}
+                    status={project.status}
                   />
                 ))}
               </Grid>

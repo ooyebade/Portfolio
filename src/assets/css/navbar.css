@@ -1,89 +1,291 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
 .navbar {
     height: 6.5rem;
     position: absolute;
-    background-color: initial;
-    color: #e3e4ea;
+    top: 0;
+    left: 0;
+
+    background-color: transparent;
+
     z-index: 99;
+
     display: flex;
     align-items: center;
-    justify-content: center;
+
     width: 100%;
-  }
-  
-  .navbar-container {
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.navbar-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     width: 100%;
-    padding: 0 3rem;
+
+    padding: 0 3.5rem;
+
     margin-top: 1rem;
-  }
-  
-  .navbar-container > h1 {
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.navbar-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container h1 {
     font-family: "Aveniornextltpro";
-    color: var(--primary-2);
+    color: var(--nav-text-color);
+
     font-size: 2.5rem;
+
     user-select: none;
-  }
-  
-  .navLink-container {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    transition: color 0.3s ease;
+}
+
+
+/* ==========================================
+   DESKTOP NAVIGATION
+========================================== */
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+
+    /* Slightly more breathing room */
+    gap: 2.5rem;
+}
+
+
+/* ==========================================
+   NAVIGATION LINKS
+========================================== */
+
+.desktop-nav-link {
+    position: relative;
+
+    text-decoration: none;
+
+    color: var(--nav-text-color);
+
+    font-family: var(--primaryFont);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    padding: 0.4rem 0;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* ==========================================
+   NAVIGATION UNDERLINE
+========================================== */
+
+.desktop-nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--nav-hover-color);
+
+    transition: width 0.3s ease;
+}
+
+
+/* ==========================================
+   HOVER
+========================================== */
+
+.desktop-nav-link:hover {
+    color: var(--nav-hover-color);
+
+    transform: translateY(-1px);
+}
+
+.desktop-nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* ==========================================
+   THEME TOGGLE
+========================================== */
+
+.desktop-theme-toggle {
+    border: none;
+
+    background: transparent;
+
+    color: var(--nav-text-color);
+
+    font-size: 1.25rem;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.35rem;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.desktop-theme-toggle:hover {
+    color: var(--nav-hover-color);
+
+    transform: rotate(15deg);
+}
+
+
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+.nav-menu {
+    display: none;
+}
+
+
+/* ==========================================
+   DRAWER
+========================================== */
+
+.navLink-container {
     margin-top: 5rem;
-  }
-  
-  .drawer > .MuiBackdrop-root {
+}
+
+.drawer-content {
+    width: 100%;
+}
+
+.drawer > .MuiBackdrop-root {
     background: rgba(33, 33, 33, 0.15) !important;
+
     backdrop-filter: blur(20px) !important;
-  }
-  
-  .drawer > .MuiDrawer-paper {
+}
+
+.drawer > .MuiDrawer-paper {
     background-color: #15202b !important;
-  }
-  
-  @media (max-width: 1100px) {
+}
+
+
+/* ==========================================
+   LARGE TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+
     .navbar-container {
-      padding: 0 2rem;
+        padding: 0 2.5rem;
     }
-    .navbar-container > h1 {
-      font-size: 2.2rem;
+
+    .navbar-container h1 {
+        font-size: 2.2rem;
     }
-    .nav-menu {
-      font-size: 2.2rem;
-      margin-top: -1.5rem;
+
+    .desktop-nav {
+        gap: 1.7rem;
     }
-  }
-  
-  @media (max-width: 800px) {
-    .navLink-container {
-      margin-top: 3rem;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .nav-menu {
-      color: var(--primary-2);
-    }
-    .navbar-container > h1 {
-      font-size: 2rem;
-    }
-    .nav-menu:hover {
-      color: var(--primary-2);
-    }
-    .MuiDrawer-paper {
-      border-radius: 0 !important;
+
+    .desktop-nav-link {
+        font-size: 0.95rem;
     }
 }
 
-  
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-    .navbar {
-      height: 5rem;
+
+/* ==========================================
+   TABLET / MOBILE
+========================================== */
+
+@media (max-width: 959px) {
+
+    .desktop-nav {
+        display: none;
     }
+
     .navbar-container {
-      padding: 0 1rem;
-      margin-top: 0rem;
+        padding: 0 2rem;
     }
-    .navbar-container > h1 {
-      font-size: 1.5rem;
+
+    .navLink-container {
+        margin-top: 3rem;
     }
-  }
-  
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .navbar-container {
+        padding: 0 1.2rem;
+    }
+
+    .navbar-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .MuiDrawer-paper {
+        border-radius: 0 !important;
+    }
+}
+
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-device-pixel-ratio: 2)
+and (device-aspect-ratio: 2/3) {
+
+    .navbar {
+        height: 5rem;
+    }
+
+    .navbar-container {
+        padding: 0 1rem;
+        margin-top: 0;
+    }
+
+    .navbar-container h1 {
+        font-size: 1.5rem;
+    }
+}

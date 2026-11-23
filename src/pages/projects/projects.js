@@ -10,7 +10,7 @@ function ProjectPage() {
     const { theme } = useContext(ThemeContext);
 
     const filteredArticles = projectsData.filter((project) => {
-        const content = project.projectName + project.projectDesc + project.tags
+        const content = project.projectName + project.projectDesc + project.tags + project.status
         return content.toLowerCase().includes(search.toLowerCase())
     })
 
@@ -69,6 +69,5 @@ function ProjectPage() {
         />
     )
 }
-
 
 export default ProjectPage;

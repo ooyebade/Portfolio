@@ -5,7 +5,7 @@ import Particle from "../../helper/particle";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import { Container, Row } from "react-bootstrap";
-import resumePdf from "../../assets/Oyindamola_Resume.pdf";
+import resumePdf from "../../assets/Oyindamola_Oyebade_Resume.pdf";
 import  Zoom  from 'react-reveal/Zoom';
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { ThemeContext } from '../../context/themeContext';
@@ -13,7 +13,7 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink = "https://raw.githubusercontent.com/ooyebade/Portfolio/main/src/assets/Oyindamola_Resume.pdf";
+const resumeLink = "https://raw.githubusercontent.com/ooyebade/Portfolio/main/src/assets/Oyindamola_Oyebade_Resume.pdf";
 
 function Resume() {
    const [numPages, setNumPages] = useState(null);

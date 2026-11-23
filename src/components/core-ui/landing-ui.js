@@ -3,7 +3,9 @@ import { HashLink as NavLink } from "react-router-hash-link";
 import Typed from 'react-typed';
 import { greetings } from '../../data/portfolio';
 // import cartoon  from '../../assets/images/cartoon.png';
-import profile from '../../assets/images/profilePic.jpg'
+// import profile from '../../assets/images/profilePic.jpg';
+import profilePic2 from '../../assets/images/profile-pic-2.jpeg';
+
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -46,7 +48,7 @@ function LandingUi ({ theme, drawerOpen, classes }) {
                     </div>
                 </div>
                 <img
-                    src={profile}
+                    src={profilePic2}
                     alt=''
                     className='landing--img'
                     style={{
