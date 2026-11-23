@@ -30,6 +30,14 @@
     line-height: 110%;
     text-align: center;
 }
+
+.project-status {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 100%;
+}
   
 .projectContent > img {
     width: 100%;

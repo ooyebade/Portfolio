@@ -6,7 +6,7 @@ import { theDarkTheme, theLightTheme } from '../theme/theme';
 
 import darkImg from '../assets/images/darkImg.jpg';
 
-import lightImage from '../assets/images/lightImage.jpg';
+import lightImage from '../assets/images/light-image.png';
 
 export const ThemeContext = createContext()
 

@@ -12,6 +12,7 @@ import react from '../assets/images/svg/react.svg'
 import typescript from '../assets/images/svg/typescript.svg'
 import vue from '../assets/images/svg/vue.svg'
 import wordpress from '../assets/images/svg/wordpress.svg'
+import elementor from '../assets/images/svg/elementor.svg'
 
 
 export const skillsImg = (skills) => {
@@ -43,6 +44,8 @@ export const skillsImg = (skills) => {
             return vue;
         case 'wordpress':
             return wordpress;
+        case 'elementor':
+            return elementor;
         default:
             break;
     }
